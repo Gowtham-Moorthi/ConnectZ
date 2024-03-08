@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:layout_centerVertical="true"
+    tools:context=".VerificationActivity">
+
+    <TextView
+        android:id="@+id/verificationHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Verification"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/otpDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verificationHeader"
+        android:layout_marginTop="10dp"
+        android:text="Enter the OTP sent to your email address"
+        android:textColor="#B0B0B0"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/otpInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp1InputLayout"
+        style="@style/OtpInputLayoutStyle"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp1EditText"
+            style="@style/OtpEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp2InputLayout"
+        style="@style/OtpInputLayoutStyle"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp2EditText"
+            style="@style/OtpEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp3InputLayout"
+        style="@style/OtpInputLayoutStyle"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp3EditText"
+            style="@style/OtpEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp4InputLayout"
+        style="@style/OtpInputLayoutStyle"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp4EditText"
+            style="@style/OtpEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp5InputLayout"
+        style="@style/OtpInputLayoutStyle"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp5EditText"
+            style="@style/OtpEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp6InputLayout"
+        style="@style/OtpInputLayoutStyle"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp6EditText"
+            style="@style/OtpEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resendOtpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Resend OTP"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/verifyAndProceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resendOtpButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00796B"
+        android:text="Verify and Proceed"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
